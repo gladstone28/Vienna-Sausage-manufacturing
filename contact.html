@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vienna Sausage Manufacturing</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -13,17 +15,31 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="manufacturing.html">Manufacturing Process</a></li>
                 <li><a href="haccp.html">HACCP Process</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Welcome to Vienna Sausage Manufacturing</h1>
         <p>Discover the process of making Vienna sausages and learn about our safety and quality standards.</p>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Your message" rows="4"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
     </main>
     <footer>
-        <p>&copy; 2024 Vienna Sausage Co.</p>
+        <p>&copy; 2024 Quality Solutions Limited, call 876-999-5673</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
